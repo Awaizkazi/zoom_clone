@@ -13,10 +13,14 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children:  [
+        children: [
           const Text(
-            'Start or join a meeting',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            'Start a Meeting',
+            style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+          ),
+          const Text(
+            'Start or join a meeting on the go',
+            style: TextStyle(fontSize: 22),
           ),
           Image.asset('assets/images/onboarding.jpg'),
         ],
