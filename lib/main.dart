@@ -27,3 +27,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+// ! I have to make an app in Android from Firebase
+// https://www.youtube.com/watch?v=sMA1dKbv33Y&t=2370s
+// Yha se dekna hai pehle App bananeka hai Firebase me
