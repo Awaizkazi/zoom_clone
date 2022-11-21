@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zoom_clone/widgets/custom_button.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -22,7 +23,11 @@ class _LoginScreenState extends State<LoginScreen> {
             'Start or join a meeting on the go',
             style: TextStyle(fontSize: 22),
           ),
-          Image.asset('assets/images/onboarding.jpg'),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 38.0),
+            child: Image.asset('assets/images/onboarding.jpg'),
+          ),
+          const CustomButton(text: 'Login'),
         ],
       ),
     );
