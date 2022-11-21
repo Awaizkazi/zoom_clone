@@ -27,7 +27,10 @@ class _LoginScreenState extends State<LoginScreen> {
             padding: const EdgeInsets.symmetric(vertical: 38.0),
             child: Image.asset('assets/images/onboarding.jpg'),
           ),
-          const CustomButton(text: 'Login'),
+          CustomButton(
+            text: 'Sign In By Google',
+            onPressed: () {},
+          ),
         ],
       ),
     );
