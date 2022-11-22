@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zoom_clone/utils/colors.dart';
+import 'package:zoom_clone/widgets/home_meeting_button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -30,7 +31,13 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           Row(
-            children: [],
+            children: [
+              HomeMeetingButton(
+                onPressed: () {},
+                icon: Icons.videocam,
+                text: 'New Meeting',
+              ),
+            ],
           ),
         ],
       ),
