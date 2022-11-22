@@ -12,8 +12,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
-          const Text('Home Screen'),
+        children: const [
+          Text('Home Screen'),
+          Text('Home Screen'),
         ],
       ),
     );
