@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Column(
         children: [
-          Text('data'),
+          const Text('Home Screen'),
         ],
       ),
     );
