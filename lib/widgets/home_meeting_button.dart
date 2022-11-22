@@ -37,7 +37,7 @@ class HomeMeetingButton extends StatelessWidget {
           Text(
             text,
             style: TextStyle(color: Colors.grey),
-          )
+          ),
         ],
       ),
     );

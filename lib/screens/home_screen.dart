@@ -31,13 +31,44 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               HomeMeetingButton(
                 onPressed: () {},
                 icon: Icons.videocam,
                 text: 'New Meeting',
               ),
+              HomeMeetingButton(
+                onPressed: () {},
+                icon: Icons.add_box_rounded,
+                text: 'Join Meeting',
+              ),
+              HomeMeetingButton(
+                onPressed: () {},
+                icon: Icons.calendar_today,
+                text: 'Schedule',
+              ),
+              HomeMeetingButton(
+                onPressed: () {},
+                icon: Icons.arrow_upward_rounded,
+                text: 'Share Screen',
+              ),
             ],
+          ),
+          const Padding(
+            padding: EdgeInsets.symmetric(vertical: 20),
+            child: Text(
+              'Add a Calendar',
+              style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 25,
+                  fontWeight: FontWeight.w300),
+            ),
+          ),
+          const Expanded(
+            child: Center(
+              child: Text('Create or Join a Meeting with just a Click !'),
+            ),
           ),
         ],
       ),
