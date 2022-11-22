@@ -22,7 +22,7 @@ class HomeMeetingButton extends StatelessWidget {
             height: 60,
             decoration: BoxDecoration(
               color: buttonColor,
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(18),
               boxShadow: [
                 BoxShadow(
                   blurRadius: 10,

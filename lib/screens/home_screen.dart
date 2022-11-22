@@ -35,13 +35,13 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               HomeMeetingButton(
                 onPressed: () {},
-                icon: Icons.videocam,
-                text: 'New Meeting',
+                icon: Icons.add_box_rounded,
+                text: 'Join Meeting',
               ),
               HomeMeetingButton(
                 onPressed: () {},
-                icon: Icons.add_box_rounded,
-                text: 'Join Meeting',
+                icon: Icons.videocam,
+                text: 'New Meeting',
               ),
               HomeMeetingButton(
                 onPressed: () {},
@@ -67,7 +67,10 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const Expanded(
             child: Center(
-              child: Text('Create or Join a Meeting with just a Click !'),
+              child: Text(
+                'Create / Join a Meeting with just a Click !',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
             ),
           ),
         ],
