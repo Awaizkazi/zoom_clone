@@ -32,6 +32,16 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           CustomButton(
             text: 'Sign In By Google',
+
+            //! Sign in ke baad Direct home Screen pe jana chahiye
+            // onPressed: () async {
+            //   bool res = await _authMethods.signInWithGoogle(context);
+            //   if (res) {
+            //     Navigator.pushNamed(context, '/home');
+            //   }
+            // },
+
+            //
             onPressed: () async {
               bool res = await _authMethods.signInWithGoogle(context);
               if (res) {
