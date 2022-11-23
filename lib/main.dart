@@ -45,4 +45,4 @@ class MyApp extends StatelessWidget {
 
 // ! Continued from the Jitsi_meet package
 // https://www.youtube.com/watch?v=sMA1dKbv33Y&t=2370s
-// 1 : 10 : 56 . Setting Up Jitsi Meet 
+// 1 : 17 : 56 . Setting Up Jitsi Meet  Adding Done but stuck in the error
