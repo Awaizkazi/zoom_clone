@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:zoom_clone/resources/auth_methods.dart';
 import 'package:zoom_clone/screens/home_screen.dart';
@@ -27,24 +28,16 @@ class MyApp extends StatelessWidget {
         '/home': (context) => const HomeScreen(),
         // '/video-call': (context) => const VideoCallScreen(),
       },
-      home: StreamBuilder(
-        stream: AuthMethods().authChanges,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(
-              child: CircularProgressIndicator(),
-            );
-          }
-
-          if (snapshot.hasData) {
-            return const HomeScreen();
-          }
-
-          return const LoginScreen();
-        },
-      ),
-      // Named Routes
-    );
+      home: StreamBuilder<User?>(
+          stream: FirebaseAuth.instance.authStateChanges(),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              return const HomeScreen();
+            } else {
+              return LoginScreen();
+            }
+          },
+        ));
   }
 }
 
