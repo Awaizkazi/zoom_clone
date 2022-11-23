@@ -85,13 +85,13 @@ class _HomeScreenState extends State<HomeScreen> {
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.comment_bank), label: 'Meet & Chart'),
+              icon: Icon(Icons.comment_bank, size: 25), label: 'Meet & Chart'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.lock_clock), label: 'Meetings'),
+              icon: Icon(Icons.videocam, size: 30), label: 'Meetings'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person_outline), label: 'Contacts'),
+              icon: Icon(Icons.person_outline, size: 25), label: 'Contacts'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.settings_outlined), label: 'Settings'),
+              icon: Icon(Icons.settings_outlined, size: 25), label: 'Settings'),
         ],
       ),
     );
