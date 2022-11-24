@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:zoom_clone/resources/auth_methods.dart';
 import 'package:zoom_clone/screens/home_screen.dart';
 import 'package:zoom_clone/widgets/custom_button.dart';
@@ -33,16 +34,16 @@ class _LoginScreenState extends State<LoginScreen> {
           CustomButton(
             text: 'Sign In By Google',
             //! Sign in ke baad Direct home Screen pe jana chahiye
-            // onPressed: () async {
-            //   final GoogleSignInAccount? googleUser =
-            //       await GoogleSignIn().signIn();
-            // },
-            onPressed: (() {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const HomeScreen()),
-              );
-            }),
+            onPressed: () async {
+              final GoogleSignInAccount? googleUser =
+                  await GoogleSignIn().signIn();
+            },
+            // onPressed: (() {
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(builder: (context) => const HomeScreen()),
+            //   );
+            // }),
           ),
         ],
       ),
